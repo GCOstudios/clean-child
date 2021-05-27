@@ -32,8 +32,6 @@ if ( post_password_required() ) {
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-<article class="<?php mts_article_class(); ?>">
-<div id="content_box" >
 
 	<?php
 	/**
@@ -73,8 +71,6 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
-</div>
-</div>
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
